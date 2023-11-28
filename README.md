@@ -2,7 +2,8 @@
 1) idempotency
 2) recilient
 3) fault tolerent 
-4) validator
+4) data validator
+5) api version
 
 # Get Started
 1) clone repository 
@@ -12,3 +13,4 @@
 # Tasks in queue
 
 1) Move ES5 to ES6
+2) add redis dependancy to manage recent transation data

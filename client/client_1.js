@@ -12,7 +12,7 @@ axiosRetry(axios, {
   retryCondition: (_error) => true,
 });
 axios
-  .get("http://localhost:3000?abc=demo", { 	headers: {  "Idempotency-Key": uuidv4() }})
+  .get("http://localhost:3000/idempotancy_check?abc=demo", { 	headers: {  "Idempotency-Key": uuidv4() }})
   .then(function (response) {
     // handle success
     console.log(response.data);
